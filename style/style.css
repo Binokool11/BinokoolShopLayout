@@ -43,13 +43,28 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	}
 }
 
+@media (max-width:942px){
+	.about__company__chief{
+		display: none;
+	}
+}
+
+@media (max-width:451px){
+	.header__logo{
+		display: none;
+	}
+	.description{
+		display: none;
+	}
+}
+
 body{
 	font-family: CURSIVE;
 	color:white;
 }
 
 .logo{
-	font-family:'Post No Bills Jaffna', sans-serif;
+	font-family:Post No Bills Jaffna, sans-serif;
 	font-size: 40px;
 }
 
@@ -70,13 +85,14 @@ body{
 .header__row{
     display: flex;
     margin: 10px;
-	justify-content: space-between;
+	justify-content: start;
+	justify-content: center;
 	align-items: center;
 }
 
-.header__logo{
-	flex: 1 1 auto;
+.header__search{
 	text-align: center;
+	flex:1 1 auto;
 }
 
 .header__column{
@@ -94,6 +110,14 @@ body{
 	font-size: 20px;
 	padding-left: 40px;
 	background-color: rgba(240,240,243,.3);
+}
+
+.search__input:hover{
+	background-color: rgba(196, 196, 201, 0.881);
+}
+
+.search__input:focus{
+	background-color: #a2c7df;
 }
 
 .header__shopping__card{
@@ -159,7 +183,7 @@ body{
 	background-color: #000000;
 	flex:0 1 22%;
 	border-radius: 20px;
-	margin: 0 20px 20px 0;
+	margin: 20px;
 }
 
 .product__column__item__row{
@@ -177,6 +201,7 @@ body{
 	padding: 5px;
 	border-radius: 5px;
 	background-color: #d4d2d7;
+	text-align: center;
 }
 
 .shopping__button:hover {
@@ -204,20 +229,16 @@ body{
 
 .about__company__row{
 	display: flex;
-	align-items: center;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .about__company__column{
-	flex:0 1 40%;
 	margin: 20px;
-}
-
-.about__company__text{
+	max-width: 100%;
+	text-align: center;
 	font-size: 14px;
 	line-height: 20px;
-	text-align: justify;
 }
 
 .footer__copyright{
@@ -232,4 +253,8 @@ body{
 .icon{
 	text-align: center;
 	font-size: 14px;
+}
+
+.around__the__clock{
+	color: rgb(173, 32, 32);
 }
