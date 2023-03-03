@@ -145,8 +145,7 @@ body{
 }
 
 .product__name{
-	font-size: 35px;
-	margin: 10px;
+	font-size: 40px;
 }
 
 .description{
@@ -154,8 +153,14 @@ body{
 }
 
 .product__description > p{
+	margin-bottom: 20px;
+	line-height: 20px;
+}
+
+.product__description > ul > li{
 	margin: 20px;
 	line-height: 20px;
+	list-style: inside;
 }
 
 .product__description__title{
@@ -168,13 +173,39 @@ body{
 	max-width: 500px;
 }
 
+.price{
+	font-size: 25px;
+	margin-top: 10px;
+	color: #a2c7df;
+}
+
+.shopping__button {
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #d4d2d7;
+	text-align: center;
+}
+
+.shopping__button:hover {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #473a5a;
+	color:white;
+	cursor: pointer;
+}
+
+.shopping__button:active {
+	color:rgb(171, 54, 54);
+}
+
 ul.leaders li { clear: both; }
 
 ul.leaders li span:first-child {
   float: left;
   padding: 0 .4em 0 0;
-  margin: 0;
+  margin: 5px;
 }
+
 ul.leaders li span + span {
   float: right;
   padding: 0 0 0 .4em;
@@ -189,11 +220,14 @@ ul.leaders li:after {
   border-bottom: 1px dotted;
 }
 
+.product__description__row{
+	display: flex;
+}
 
-
-
-
-
+.product__description__row__column{
+	flex:0 1 45%;
+	margin: 20px;
+}
  
 .about__company{
 	background-image:url(../image/backgroud_image/footer_man.png);
